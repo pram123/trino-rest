@@ -41,6 +41,10 @@ public class RestConfig
     private String customerSecret;
     private String secret;
     private String token;
+    private String apideckAppId;
+    private String apideckConsumerId;
+    private String apideckServiceID;
+    private String webServiceUrl;
     private String clientCachePath = Paths.get(System.getProperty("java.io.tmpdir"), "trino-rest-cache").toString();
     private DataSize clientCacheMaxSize = DataSize.of(10, DataSize.Unit.MEGABYTE);
     private Duration clientConnectTimeout = Duration.succinctDuration(10, TimeUnit.SECONDS);
@@ -65,6 +69,62 @@ public class RestConfig
     public String getCustomerSecret()
     {
         return customerSecret;
+    }
+
+    @Config("apideckAppId")
+    @ConfigSecuritySensitive
+    @CanIgnoreReturnValue
+    public RestConfig setApideckAppID(String apideckAppId)
+    {
+        this.apideckAppId = apideckAppId;
+        return this;
+    }
+
+    @NotNull
+    public String getApideckAppID()
+    {
+        return this.apideckAppId;
+    }
+
+    @Config("apideckConsumerId")
+    @ConfigSecuritySensitive
+    @CanIgnoreReturnValue
+    public RestConfig setApideckConsumerId(String apideckConsumerId)
+    {
+        this.apideckConsumerId = apideckConsumerId;
+        return this;
+    }
+
+    public String getApideckConsumerId()
+    {
+        return this.apideckConsumerId;
+    }
+
+    @Config("apideckServiceId")
+    @ConfigSecuritySensitive
+    @CanIgnoreReturnValue
+    public RestConfig setApideckServiceID(String serviceID)
+    {
+        this.apideckServiceID = serviceID;
+        return this;
+    }
+
+    public String getApideckServiceID()
+    {
+        return this.apideckServiceID;
+    }
+
+    @Config("webServiceUrl")
+    @CanIgnoreReturnValue
+    public RestConfig setWebServiceUrl(String webServiceUrl)
+    {
+        this.webServiceUrl = webServiceUrl;
+        return this;
+    }
+
+    public String getWebServiceUrl()
+    {
+        return webServiceUrl;
     }
 
     @Config("customer_secret")

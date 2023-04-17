@@ -43,6 +43,7 @@
 
     <modules>
         <module>trino-rest-base</module>
+        <module>trino-rest-apideck-crm</module>
         <module>trino-rest-slack</module>
         <module>trino-rest-github</module>
         <module>trino-rest-twitter</module>
@@ -115,6 +116,7 @@
                 <artifactId>units</artifactId>
                 <version>1.8</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 

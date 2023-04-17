@@ -73,6 +73,7 @@ public class RestModule
         return getService(type, url, clientBuilder);
     }
 
+    //TODO: Add headers for other authentification methods
     public static <T> T getService(Class<T> type, String url, OkHttpClient.Builder clientBuilder)
     {
         if (getLogLevel().intValue() <= Level.FINE.intValue()) {

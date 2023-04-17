@@ -25,13 +25,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package pl.net.was.rest.slack;
+package pl.net.was.rest.apideck;
 
 import io.trino.testing.AbstractTestQueryFramework;
 import io.trino.testing.QueryRunner;
 import org.testng.annotations.Test;
 
-public class sTestSlackQueries
+public class TestAPIDeckCRMOpportunitiesQueries
         extends AbstractTestQueryFramework
 {
     @Override

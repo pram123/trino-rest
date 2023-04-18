@@ -19,12 +19,12 @@
     <artifactId>trino-rest-apideck-crm</artifactId>
     <description>Trino REST API Deck CRM Opportunities</description>
     <packaging>trino-plugin</packaging>
-    <version>0.105-SNAPSHOT</version>
+    <version>0.106</version>
 
     <parent>
         <groupId>pl.net.was</groupId>
         <artifactId>trino-rest</artifactId>
-        <version>0.105-SNAPSHOT</version>
+        <version>0.106</version>
     </parent>
 
     <properties>

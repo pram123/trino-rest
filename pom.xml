@@ -18,7 +18,7 @@
 
     <groupId>pl.net.was</groupId>
     <artifactId>trino-rest</artifactId>
-    <version>0.107-SNAPSHOT</version>
+    <version>0.106</version>
     <description>Trino RESTful Connectors</description>
     <packaging>pom</packaging>
 
@@ -44,9 +44,12 @@
     <modules>
         <module>trino-rest-base</module>
         <module>trino-rest-apideck-crm</module>
+        <module>trino-rest-apideck</module>
+<!--
         <module>trino-rest-slack</module>
         <module>trino-rest-github</module>
         <module>trino-rest-twitter</module>
+-->
     </modules>
 
     <properties>
